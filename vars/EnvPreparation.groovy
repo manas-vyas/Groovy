@@ -21,6 +21,7 @@ def removeFile() {
 	//sh 'cat ./temp/Dockerrun.aws.json'
 	sh 'rm -rf $ARTIFACT_NAME'
 	sh 'mkdir manas'
+	sleep 30
 	sh 'ls -lart temp'
 	sh 'cd temp && zip -r ../$ARTIFACT_NAME .'
 	sh "aws s3 cp ./$ARTIFACT_NAME s3://$AWS_S3_BUCKET/${BUILD_TAG}.zip"
