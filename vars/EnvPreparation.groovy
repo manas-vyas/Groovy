@@ -20,7 +20,7 @@ def copyartifactDV() {
 def removeFile() {				
 	//sh 'cat ./temp/Dockerrun.aws.json'
 	sh 'rm -rf $ARTIFACT_NAME'
-	sleep 60
+	sh 'mkdir manas'
 	sh 'ls -lart temp'
 	sh 'cd temp && zip -r ../$ARTIFACT_NAME .'
 	sh "aws s3 cp ./$ARTIFACT_NAME s3://$AWS_S3_BUCKET/${BUILD_TAG}.zip"
