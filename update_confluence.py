@@ -16,7 +16,7 @@ server = "https://jkjfkjfkjjkrnd.atlassian.net"
 confluence = Confluence(url=server, username=user, password=api_key, verify_ssl=False)
 #page = confluence.get_page_by_title("MLOP", "Test_automation", expand="body.storage")
 #body = page["body"]["storage"]["value"]
-body=confluence.get_page_by_id('3183640868',expand='body.storage').get('body').get('storage').get('value')
+body=confluence.get_page_by_id('7683677777',expand='body.storage').get('body').get('storage').get('value')
 #print(body)
 tables_raw = [[[cell.text for cell in row("th") + row("td")]                    
                     for row in table("tr")]                    
