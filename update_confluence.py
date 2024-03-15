@@ -10,9 +10,9 @@ tag = sys.argv[2]
 datetime = sys.argv[3]
 url = sys.argv[4]
 region = sys.argv[5]
-user = "insightsmaxautomation@axtria.onmicrosoft.com"
-api_key = "OVEwn7ZGvDtLRGzxSzEi9A0C"
-server = "https://axtriarnd.atlassian.net"
+user = "hhjjjkjfkjfkjfkffk"
+api_key = "kfjjfjfkfjkfjkf"
+server = "https://jkjfkjfkjjkrnd.atlassian.net"
 confluence = Confluence(url=server, username=user, password=api_key, verify_ssl=False)
 #page = confluence.get_page_by_title("MLOP", "Test_automation", expand="body.storage")
 #body = page["body"]["storage"]["value"]
